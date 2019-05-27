@@ -45,6 +45,7 @@ namespace Calculator.UnitTest
 
         [TestCase(10, 1, 10)]
         [TestCase(-20, 1, -20)]
+        [TestCase(1.5, 1, 1.5 )]
         public void CalculatorPower_ExpToX_returnsResult(double x, double exp, double result)
         {
             Assert.That(_uut.Power(x, exp), Is.EqualTo(result).Within(0.01));
